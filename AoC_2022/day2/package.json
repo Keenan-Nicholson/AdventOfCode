@@ -1,0 +1,19 @@
+{
+  "name": "day2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "day2.js",
+  "scripts": {
+    "test": "node day2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keenan-Nicholson/AdventOfCode.git"
+  },
+  "author": "Keenan Nicholson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Keenan-Nicholson/AdventOfCode/issues"
+  },
+  "homepage": "https://github.com/Keenan-Nicholson/AdventOfCode#readme"
+}
