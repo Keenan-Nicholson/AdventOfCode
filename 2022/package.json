@@ -5,8 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "day-1": "node --loader ts-node/esm ./day1/day1.ts",
-    "day-2": "node --loader ts-node/esm ./day2/day2.ts"
+    "day1": "node --loader ts-node/esm ./day1/day1.ts",
+    "day2": "node --loader ts-node/esm ./day2/day2.ts",
+    "day3": "node --loader ts-node/esm ./day3/day3.ts",
+    "day4": "node --loader ts-node/esm ./day4/day4.ts"
   },
   "repository": {
     "type": "git",
