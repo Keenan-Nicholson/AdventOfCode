@@ -9,7 +9,8 @@
     "day2": "node --loader ts-node/esm ./day2/day2.ts",
     "day3": "node --loader ts-node/esm ./day3/day3.ts",
     "day4": "node --loader ts-node/esm ./day4/day4.ts",
-    "day6": "node --loader ts-node/esm ./day6/day6.ts"
+    "day6": "node --loader ts-node/esm ./day6/day6.ts",
+    "day7": "node --loader ts-node/esm ./day7/day7.ts"
   },
   "repository": {
     "type": "git",
