@@ -19,9 +19,9 @@ function startOfPacket() {
 
 function startOfMessage() {
   for (let i = 14; i < packet.length; i++) {
-    let prevFour;
-    prevFour = packet.slice(i - 14, i);
-    if (!hasRepeats(prevFour)) {
+    let prevFourteen;
+    prevFourteen = packet.slice(i - 14, i);
+    if (!hasRepeats(prevFourteen)) {
       return i;
     }
   }
