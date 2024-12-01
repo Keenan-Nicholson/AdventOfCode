@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-    f, err := os.Open("day1.txt")
+    f, err := os.Open("day1p2.txt")
     if err != nil {
         log.Fatal(err)
     }
@@ -59,6 +59,21 @@ func main() {
         dist := math.Abs(float64(left_ids[i] - right_ids[i]))
         result += int(dist)
     }
-    
-    fmt.Println(result)
+
+    fmt.Println("Part 1: ", result)
+
+    score := 0
+
+    for i:= 0;i<len(left_ids);i++ {
+        count := 0
+        for j:=0;j<len(right_ids);j++ {
+            if left_ids[i] == right_ids[j] {
+                count += 1
+            }
+        }
+        score += left_ids[i] * count
+    }
+
+    fmt.Println("Part 2: ", score)
+
 }
