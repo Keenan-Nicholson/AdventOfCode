@@ -10,7 +10,7 @@ for r in ranges:
 
 parsed_valid = [x for x in parsed if str(x[0])[0] != "0"]
 
-def has_repeating_pattern(n):
+def has_repeating_pattern_twice(n):
     s = str(n)
     length = len(s)
 
@@ -32,8 +32,34 @@ for item in parsed_valid:
     upper = item[1]
 
     for r in range(lower, upper+1):
-        if has_repeating_pattern(str(r)):
+        if has_repeating_pattern_twice(str(r)):
             repeats.append(r)
 
 ans = sum(repeats)
+print(ans)
+
+repeats = []
+
+# Got the idea for this from https://www.geeksforgeeks.org/python/python-check-if-string-repeats-itself/
+def has_repeating_pattern(n):
+    s = str(n)
+    length = len(s)
+
+    for i in range(1, length // 2 + 1):
+        if length % i != 0: 
+            continue
+        pattern = s[:i]
+        if pattern * (length // i) == s:
+            return True
+    return False
+
+for item in parsed_valid:
+    lower = item[0]
+    upper = item[1]
+
+    for r in range(lower, upper+1):
+        if has_repeating_pattern(str(r)):
+            repeats.append(r)
+
+            ans = sum(repeats)
 print(ans)
